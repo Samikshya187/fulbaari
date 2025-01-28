@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="Homepage.css">
+</head>
+
+<body>
+    <div class="text-container">
+        <span class="changing-text">Order before 1pm for same day delivery!</span>
+    </div>
+    <section class="bodysection1">
+        <div class="nav-content">
+            <div class="navLink">
+                <a href="./Homepage.html">HOME</a>
+                <a href="./shop.html">SHOP</a>
+                <a href="#">OUR STORES</a>
+                <a href="./contact.html">CONTACT</a>
+            </div>
+
+            <div class="logo">
+                <!-- <img src="logo1.png" height="250px" width="100%" srcset=""> -->
+                <h1 class="फूlbaaरी"> फूlbaaरी</h1>
+            </div>
+            <div class="navRight">
+                <form action="">
+                    <!-- <input type="text" class="search-input" placeholder="search"> -->
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <div class="cart">
+                    <div class="cartIcon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <!-- <span>Cart (0)</span> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="shop-online">
+        <div class="selectitems">
+            <div class="select">
+                <label for="flower">SHOP</label>
+                <select id="flowerselect" onchange="changePage(this.value)" style="height: 2rem; width: 5rem;">
+                    <option value="shop.html">Bouquets </option>
+                    <option value="plants.html">Plants</option>
+                </select>
+                <!-- <select id="flowerSelector" onchange="navigateToPage()">
+    <option value="page1.html">Bouquets</option>
+    <option value="page2.html">Plants</option>
+  </select> -->
+
+                <select id="flowerselect1" style="display: none;">
+                    <option value="plants">Plants</option>
+                    <option value="bouquets">Bouquets</option>
+                </select>
+
+
+
+            </div>
+        </div>
+        <script>
+            function switchDropdown(selectedValue) {
+                if (selectedValue === 'Bouquets') {
+                    document.getElementById('flowerselect').style.display = 'none';
+                    document.getElementById('flowerselect1').style.display = 'block';
+                } else {
+                    document.getElementById('flowerselect1').style.display = 'none';
+                    document.getElementById('flowerselect').style.display = 'block';
+                }
+            }
+        </script>
+
+
+        <script>
+            function changePage() {
+                var selectBox = document.getElementById("flowerselect");
+                var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+                if (selectedValue) {
+                    window.location = selectedValue; // Redirect to the selected page
+                }
+            }
+        </script>
+
+
+
+
+        <div class="card">
+
+            <div class="card-element">
+                <div class="card-element-img">
+                    <img src="mixed bouquet.webp" height="350px" width="300px" alt="">
+                </div>
+                <div class="product-information">
+                    <div class="productitem-info">
+                        <p class="productitem-title">Mixed Roses</p>
+                        <div class="productitem-price">
+                            <span class="price">
+                                <medium>From Rs500</medium>
+
+                            </span>
+                        </div>
+                        <div>
+                            <a href="./add-to-cart.html" >
+                                <button class="add-to-cart-btn">Add to Cart
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="card-element">
+                <div class="card-element-img">
+                    <img src="violet-frost.webp" height="350px" width="300px" alt="">
+                </div>
+                <div class="product-information">
+                    <div class="productitem-info">
+                        <p class="productitem-title">Violet-Frost Bouquet</p>
+                        <div class="productitem-price">
+                            <span class="price">
+                                <medium>From Rs500</medium>
+
+                            </span>
+                        </div>
+                        <div>
+                            <a href="./add-to-cart.html" target="_blank">
+                                <button class="add-to-cart-btn">Add to Cart
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-element">
+                <div class="card-element-img">
+                    <img src="first impression.webp" height="350px" width="300px" alt="">
+                </div>
+                <div class="product-information">
+                    <div class="productitem-info">
+                        <p class="productitem-title">First Impression Bouquet</p>
+                        <div class="productitem-price">
+                            <span class="price">
+                                <medium>From Rs500</medium>
+
+                            </span>
+                        </div>
+                        <div>
+                            <a href="./add-to-cart.html" target="_blank">
+                                <button class="add-to-cart-btn">Add to Cart
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-element">
+                <div class="card-element-img">
+                    <img src="sincerely yours.webp" height="350px" width="300px" alt="">
+                </div>
+                <div class="product-information">
+                    <div class="productitem-info">
+                        <p>Sincerely Yours Bouquet</p>
+                        <div class="productitem-price">
+                            <span class="price">
+                                <medium>From Rs500</medium>
+
+                            </span>
+                        </div>
+                        <div>
+                            <a href="./add-to-cart.html" target="_blank">
+                                <button class="add-to-cart-btn">Add to Cart
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="card">
+
+            <div class="card-element">
+                <div class="card-element-img">
+                    <img src="Everything to Me Bouquet.webp" height="350px" width="300px" alt="">
+                </div>
+                <div class="product-information">
+                    <div class="productitem-info">
+                        <p class="productitem-title">Everything to Me Bouquet</p>
+                        <div class="productitem-price">
+                            <span class="price">
+                                <medium>From Rs500</medium>
+
+                            </span>
+                        </div>
+                        <div>
+                            <a href="./add-to-cart.html" target="_blank">
+                                <button class="add-to-cart-btn">Add to Cart
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="card-element">
+                <div class="card-element-img">
+                    <img src="Floral Symphony Bouquet.webp" height="350px" width="300px" alt="">
+                </div>
+                <div class="product-information">
+                    <div class="productitem-info">
+                        <p class="productitem-title">Floral Symphony Bouquet</p>
+                        <div class="productitem-price">
+                            <span class="price">
+                                <medium>From Rs500</medium>
+
+                            </span>
+                        </div>
+                        <div>
+                            <a href="./add-to-cart.html" target="_blank">
+                                <button class="add-to-cart-btn">Add to Cart
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-element">
+                <div class="card-element-img">
+                    <img src="Sugary Sweet Bouquet.webp" height="350px" width="300px" alt="">
+                </div>
+                <div class="product-information">
+                    <div class="productitem-info">
+                        <p class="productitem-title">Sugary Sweet Bouquet</p>
+                        <div class="productitem-price">
+                            <span class="price">
+                                <medium>From Rs500</medium>
+
+                            </span>
+                        </div>
+                        <div>
+                            <a href="./add-to-cart.html" target="_blank">
+                                <button class="add-to-cart-btn">Add to Cart
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-element">
+                <div class="card-element-img">
+                    <img src="stem roses.webp" height="350px" width="300px" alt="">
+                </div>
+                <div class="product-information">
+                    <div class="productitem-info">
+                        <p>Stem Roses Bouquet</p>
+                        <div class="productitem-price">
+                            <span class="price">
+                                <medium>From Rs500</medium>
+
+                            </span>
+                        </div>
+                        <div>
+                            <a href="./add-to-cart.html" target="_blank">
+                                <button class="add-to-cart-btn">Add to Cart
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="card">
+
+            <div class="card-element">
+                <div class="card-element-img">
+                    <img src="mixed bouquet.webp" height="350px" width="300px" alt="">
+                </div>
+                <div class="product-information">
+                    <div class="productitem-info">
+                        <p class="productitem-title">Mixed Roses</p>
+                        <div class="productitem-price">
+                            <span class="price">
+                                <medium>From Rs500</medium>
+
+                            </span>
+                        </div>
+                        <div>
+                            <a href="./add-to-cart.html" target="_blank">
+                                <button class="add-to-cart-btn">Add to Cart
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="card-element">
+                <div class="card-element-img">
+                    <img src="violet-frost.webp" height="350px" width="300px" alt="">
+                </div>
+                <div class="product-information">
+                    <div class="productitem-info">
+                        <p class="productitem-title">Violet-Frost Bouquet</p>
+                        <div class="productitem-price">
+                            <span class="price">
+                                <medium>From Rs500</medium>
+
+                            </span>
+                        </div>
+                        <div>
+                            <a href="./add-to-cart.html" target="_blank">
+                                <button class="add-to-cart-btn">Add to Cart
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-element">
+                <div class="card-element-img">
+                    <img src="first impression.webp" height="350px" width="300px" alt="">
+                </div>
+                <div class="product-information">
+                    <div class="productitem-info">
+                        <p class="productitem-title">First Impression Bouquet</p>
+                        <div class="productitem-price">
+                            <span class="price">
+                                <medium>From Rs500</medium>
+
+                            </span>
+                        </div>
+                        <div>
+                            <a href="./add-to-cart.html" target="_blank">
+                                <button class="add-to-cart-btn">Add to Cart
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-element">
+                <div class="card-element-img">
+                    <img src="sincerely yours.webp" height="350px" width="300px" alt="">
+                </div>
+                <div class="product-information">
+                    <div class="productitem-info">
+                        <p>Sincerely Yours Bouquet</p>
+                        <div class="productitem-price">
+                            <span class="price">
+                                <medium>From Rs500</medium>
+
+                            </span>
+                        </div>
+                        <div>
+                            <a href="./add-to-cart.html" target="_blank">
+                                <button class="add-to-cart-btn">Add to Cart
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="card">
+
+            <div class="card-element">
+                <div class="card-element-img">
+                    <img src="mixed bouquet.webp" height="350px" width="300px" alt="">
+                </div>
+                <div class="product-information">
+                    <div class="productitem-info">
+                        <p class="productitem-title">Mixed Roses</p>
+                        <div class="productitem-price">
+                            <span class="price">
+                                <medium>From Rs500</medium>
+
+                            </span>
+                        </div>
+                        <div>
+                            <a href="./add-to-cart.html" target="_blank">
+                                <button class="add-to-cart-btn">Add to Cart
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="card-element">
+                <div class="card-element-img">
+                    <img src="violet-frost.webp" height="350px" width="300px" alt="">
+                </div>
+                <div class="product-information">
+                    <div class="productitem-info">
+                        <p class="productitem-title">Violet-Frost Bouquet</p>
+                        <div class="productitem-price">
+                            <span class="price">
+                                <medium>From Rs500</medium>
+
+                            </span>
+                        </div>
+                        <div>
+                            <a href="./add-to-cart.html" target="_blank">
+                                <button class="add-to-cart-btn">Add to Cart
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-element">
+                <div class="card-element-img">
+                    <img src="first impression.webp" height="350px" width="300px" alt="">
+                </div>
+                <div class="product-information">
+                    <div class="productitem-info">
+                        <p class="productitem-title">First Impression Bouquet</p>
+                        <div class="productitem-price">
+                            <span class="price">
+                                <medium>From Rs500</medium>
+
+                            </span>
+                        </div>
+                        <div>
+                            <a href="./add-to-cart.html" target="_blank">
+                                <button class="add-to-cart-btn">Add to Cart
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-element">
+                <div class="card-element-img">
+                    <img src="sincerely yours.webp" height="350px" width="300px" alt="">
+                </div>
+                <div class="product-information">
+
+                    <div class="productitem-info">
+                        <p>Sincerely Yours Bouquet</p>
+                        <div class="productitem-price">
+                            <span class="price">
+                                <medium>From Rs500</medium>
+
+                            </span>
+                        </div>
+                        <div>
+                            <a href="./add-to-cart.html" target="_blank">
+                                <button class="add-to-cart-btn">Add to Cart
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function (event) {
+                    // Prevent the default action of the button click (which is navigation in this case)
+                    event.preventDefault();
+
+                    // Get flower name and image from the card
+                    const flowerName = button.closest('.productitem-info').querySelector('.productitem-title').textContent;
+                    const flowerImage = button.closest('.card-element').querySelector('img').src;
+
+                    // Construct the URL with flower name and image
+                    const url = `add-to-cart.html?name=${encodeURIComponent(flowerName)}&image=${encodeURIComponent(flowerImage)}`;
+
+                    // Navigate to the new page
+                    window.open(url, '_blank');
+                });
+            });
+        });
+    </script>
+
+
+
+    
+</body>
+<footer class="foot">
+    <div id="footer">
+        <div class="footer-section1">
+            <img src="logo1.png" alt="" height=60% width="20%">
+            <h1>Newsletter</h1>
+            <p>Subscribe to get special offers, free giveaways, <br>
+                and once-in-a-lifetime deals.
+            </p>
+
+            <div class="e-form">
+                <label for="email"></label>
+                <input type="text" placeholder="E-mail" style="height: 2rem; width:5rem; margin-top: 4rem;">
+                <!-- <div class="join"> -->
+                <button>JOIN</button>
+                <!-- </div> -->
+            </div>
+            <hr id="new1">
+
+        </div>
+
+        <div class="footer-section2">
+            <h1>Menu</h1>
+            <ul>
+                <li><a href="Homepage.html">HOME</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="">OUR STORES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-section3">
+            <h1>Visit any of our stores!</h1>
+            <p>View store finder here.</p>
+            <p>info@florasite.com</p>
+
+            <div>
+                <i class="fa-brands fa-facebook fa-2x" style="color: rgb(235, 235, 247);"></i>
+                <i class="fa-brands fa-instagram fa-2x" style="color:rgb(235, 235, 247)"></i>
+                <i class="fa-brands fa-twitter fa-2x" style="color: rgb(235, 235, 247);"></i>
+                <i class="fa-brands fa-youtube fa-2x" style="color: rgb(235, 235, 247);"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="rights">
+        <center>
+            Copyright © 2024. All rights reserved.
+        </center>
+    </div>
+</footer>
+
+</html>

@@ -1,0 +1,84 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.homebody {
+    background-image: url(pexels-suvan-chowdhury-37305-135712.jpg);
+    height: 70vh;
+    /* Make the div take up 100% of the viewport height */
+
+    background-size: cover;
+    /* Cover the entire background */
+    background-position: center;
+    /* Center the background image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* Text color on top of the image */
+    text-align: center;
+
+}
+
+
+.homebody h1 {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    padding-top: 60px;
+    margin-left: 5%;
+    text-shadow: 2px 2px 4px #000;
+    font-family: sans-serif;
+}
+
+.contact1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+.contact1 p {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    font-family: sans-serif;
+}
+
+.mail-icon {
+    margin-left: 4rem;
+    font-family: sans-serif;
+
+}
+
+.call-icon {
+    margin-left: 5rem;
+    font-family: sans-serif;
+}
+
+.location-icon {
+    margin-left: 4rem;
+    font-family: sans-serif;
+}
+
+.form {
+    align-items: center;
+    flex-direction: column;
+    margin: 0 0 4rem 25rem;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    width: 30rem;
+}
+
+#new2 {
+    border: 0.5px solid rgb(80, 126, 36);
+}
+
+.msg {
+    font-size: 2rem;
+    margin: 2em 0 1.5rem;
+    text-align: center;
+    font-family: sans-serif;
+    margin-right: 3rem;
+}
